@@ -1,11 +1,9 @@
 Package: covid
 Title: time series of covid-19 cases
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "Dimitrios",
-           family = "Zacharatos",
-           role = c("aut", "cre"),
-           email = "dimitrios@psycholate.com")
+Authors@R: person("Dimitrios", "Zacharatos", email = "dimitrios@psycholate.com", role = c("aut", "cre"))
+Author: Dimitrios Zacharatos [aut, cre]
+Maintainer: Dimitrios Zacharatos <dimitrios@psycholate.com>
 Description: time series of covid-19 cases.
 License: GPL (>= 2) + file LICENSE
 Encoding: UTF-8
