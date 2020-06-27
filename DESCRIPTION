@@ -5,6 +5,7 @@ Authors@R: person("Dimitrios", "Zacharatos", email = "dimitrios@psycholate.com",
 Author: Dimitrios Zacharatos [aut, cre]
 Maintainer: Dimitrios Zacharatos <dimitrios@psycholate.com>
 Description: time series of covid-19 cases.
+Depends: drc, magrittr, plotly, plyr, reshape2, shiny, shinyWidgets
 License: GPL (>= 2) + file LICENSE
 Encoding: UTF-8
 LazyData: true
