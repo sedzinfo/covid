@@ -68,7 +68,7 @@ covid<-function(country_region="Greece"){
               width=(as.numeric(input$dimension[1])-30),
               height=(as.numeric(input$dimension[2])-50)) %>% 
         add_trace(y=~temp_country$Deaths,name='Deaths',mode='markers') %>%
-        layout(title="",
+        layout(title=unique(input$country),
                margin=list(l=50,r=50,b=50,t=50,pad=0),
                legend=list(orientation="h",xanchor="center",x=.5,y=1.2),
                xaxis=list(title="Date"))
