@@ -6,7 +6,10 @@
 # R CMD build covid --resave-data
 library(devtools)
 library(roxygen2)
-setwd("/mnt/WDRED_REMOTE/repositories/covid/")
+directory<-paste0(gsub("generate_package.R","",rstudioapi::getActiveDocumentContext()$path))
+setwd(directory)
 # usethis::create_package("covid")
 document()
 install()
+library(covid)
+covid()
