@@ -14,3 +14,4 @@ document()
 install()
 library(covid)
 covid()
+
