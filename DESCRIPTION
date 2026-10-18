@@ -7,7 +7,9 @@ Author: Dimitrios Zacharatos [aut, cre]
 Maintainer: Dimitrios Zacharatos <dimitrios@psycholate.com>
 Description: time series of covid-19 cases.
 Depends: plotly, plyr, reshape2, shiny, shinyWidgets
-License: GPL (>= 2) + file LICENSE
+License: GPL-3
+URL: https://sedzinfo.github.io/covid/, https://github.com/sedzinfo/covid
+BugReports: https://github.com/sedzinfo/covid/issues
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
