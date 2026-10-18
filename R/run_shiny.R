@@ -12,8 +12,8 @@
 #' @keywords covid
 #' @export
 #' @examples
-#' covid(country_region="Germany")
-#' covid(country_region="Greece")
+#' if (interactive()) covid(country_region="Germany")
+#' if (interactive()) covid(country_region="Greece")
 covid<-function(country_region="Greece"){
   options(scipen=999)
   confirmed<-read.csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv",stringsAsFactors=FALSE,check.names=FALSE)

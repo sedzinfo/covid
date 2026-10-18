@@ -13,7 +13,7 @@ covid(country_region = "Greece")
 COVID-19 time series
 }
 \examples{
-covid(country_region="Germany")
-covid(country_region="Greece")
+if (interactive()) covid(country_region="Germany")
+if (interactive()) covid(country_region="Greece")
 }
 \keyword{covid}
