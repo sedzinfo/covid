@@ -16,6 +16,7 @@ directory <- dirname(rstudioapi::getActiveDocumentContext()$path)
 setwd(directory)
 # usethis::create_package("covid")
 document()
+if ("covid" %in% loadedNamespaces()) unloadNamespace("covid") # an old version still loaded would make the reinstalled one look corrupt
 if ("covid" %in% rownames(installed.packages())) remove.packages("covid")
 install()
 library(covid)
