@@ -7,7 +7,7 @@
 #' @importFrom utils read.csv
 #' @importFrom shinyWidgets dropdownButton tooltipOptions
 #' @importFrom reshape2 melt
-#' @importFrom plotly plotlyOutput renderPlotly plot_ly layout add_trace
+#' @importFrom plotly plotlyOutput renderPlotly plot_ly layout add_trace %>%
 #' @importFrom plyr ddply
 #' @keywords covid
 #' @export
