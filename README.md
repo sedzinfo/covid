@@ -10,6 +10,15 @@ library(devtools)
 
 install_github("sedzinfo/covid")
 
+Without devtools, install the source tarball of the [latest release](https://github.com/sedzinfo/covid/releases/tag/latest), which is rebuilt from `master` on every change, together with the PDF manual:
+
+```r
+install.packages(
+  "https://github.com/sedzinfo/covid/releases/download/latest/covid_0.0.0.9000.tar.gz",
+  repos = NULL, type = "source"
+)
+```
+
 # Usage
 
 library(covid)
