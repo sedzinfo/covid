@@ -26,4 +26,4 @@ system("R CMD Rd2pdf . --force --no-preview --output=covid.pdf")
 if (.Platform$OS.type == "windows") shell.exec("covid.pdf") else system("evince covid.pdf")
 system("R CMD build . --resave-data")
 
-covid() # starts the app: the console stays busy until you close it
+covid()
