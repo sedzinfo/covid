@@ -1,0 +1,42 @@
+<div class="row">
+  <main id="main" class="col-md-9">
+{{{index}}}
+  </main>
+
+  <aside class="col-md-3">
+{{#sidebar}}
+{{{.}}}
+{{/sidebar}}
+  </aside>
+</div>
+<!-- Above: pkgdown's own content-home.html. Below: structured data (JSON-LD) for search engines, on the
+     home page only. Check it at https://search.google.com/test/rich-results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "covid",
+  "alternateName": "time series of covid-19 cases",
+  "description": "time series of covid-19 cases.",
+  "url": "https://sedzinfo.shinyapps.io/covid_timeseries/",
+  "mainEntityOfPage": "https://sedzinfo.github.io/covid/",
+  "applicationCategory": "ReferenceApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "isAccessibleForFree": true,
+  "sameAs": "https://github.com/sedzinfo/covid",
+  "license": "https://www.gnu.org/licenses/gpl-3.0.html",
+  "author": {
+    "@type": "Person",
+    "@id": "https://sedzinfo.github.io/#person",
+    "name": "Dimitrios Zacharatos",
+    "url": "https://sedzinfo.github.io/",
+    "sameAs": ["https://github.com/sedzinfo", "https://orcid.org/0000-0003-1789-8294"]
+  }
+}
+</script>
