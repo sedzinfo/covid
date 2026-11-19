@@ -1,0 +1,15 @@
+# How to cite this package. GitHub shows it as "Cite this repository"; Zenodo uses it for the DOI of each release.
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "covid: time series of covid-19 cases"
+abstract: "time series of covid-19 cases."
+authors:
+  - family-names: "Zacharatos"
+    given-names: "Dimitrios"
+    orcid: "https://orcid.org/0000-0003-1789-8294"
+license: GPL-3.0-only
+repository-code: "https://github.com/sedzinfo/covid"
+url: "https://sedzinfo.shinyapps.io/covid_timeseries/"
+keywords:
+  - "shiny"
