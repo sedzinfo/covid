@@ -1,40 +1,86 @@
 # Time Series covid-19
 
 **[Open the live app](https://sedzinfo.shinyapps.io/covid_timeseries/)**
-· [Website](https://sedzinfo.github.io/covid/)
+· [Help pages](https://sedzinfo.github.io/covid/reference/)
 
-plot covid-19 time series
+## What it does
+
+**covid** is a small [Shiny](https://shiny.posit.co/) app, in an R
+package, that plots the COVID-19 time series of a country: the running
+totals of confirmed infections and of deaths, day by day, in an
+interactive [plotly](https://plotly.com/r/) chart. Choose the country
+with the button at the top left, and hover over a point to see its
+numbers.
+
+The data are the global time series of the [COVID-19 Data
+Repository](https://github.com/CSSEGISandData/COVID-19) of the Center
+for Systems Science and Engineering (CSSE) at Johns Hopkins University,
+read when the app starts. The repository stopped updating in March 2023.
 
 ## Installation
 
-### Prerequisites
+### 1. Install R
 
-1.  **Install R**: <https://cran.r-project.org/>
-2.  **Install RStudio** (optional but recommended):
-    <https://posit.co/downloads/>
+Download R from [CRAN](https://cran.r-project.org/), for Windows, macOS
+or Linux, and run the installer.
 
-### Package Installation
+### 2. Install RStudio or Positron
 
-Open RStudio (or an R console) and run:
+An editor makes R easier to use. It is optional, and both are free, from
+Posit:
+
+- [RStudio Desktop](https://posit.co/download/rstudio-desktop/)
+- [Positron](https://positron.posit.co/download.html), which also runs
+  Python
+
+### 3. Install covid
+
+Run one of these in RStudio, Positron or the R console. Each one also
+installs the packages covid needs.
+
+#### From R-universe (recommended)
 
 [`install.packages`](https://rdrr.io/r/utils/install.packages.html)`(`` `` ``"covid"``,`` `` repos ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"https://sedzinfo.r-universe.dev"``, ``"https://cloud.r-project.org"``)`` ``)`
 
 [R-universe](https://sedzinfo.r-universe.dev/covid) builds covid from
-this repository, and CRAN provides the packages it needs.
+this repository after every change, ready to install on Windows, macOS
+and Linux, and CRAN provides the packages it needs.
 
-To install from GitHub instead:
+#### From GitHub
 
-`# Install devtools if you haven't already`` `[`install.packages`](https://rdrr.io/r/utils/install.packages.html)`(``"devtools"``)`` ``# Install covid from GitHub`` ``devtools``::`[`install_github`](https://devtools.r-lib.org/reference/install-deprecated.html)`(``"sedzinfo/covid"``)`
+[`install.packages`](https://rdrr.io/r/utils/install.packages.html)`(``"pak"``)`` ``# once`` ``pak``::`[`pak`](https://pak.r-lib.org/reference/pak.html)`(``"sedzinfo/covid"``)`
 
-Or install the source tarball of the [latest
-release](https://github.com/sedzinfo/covid/releases/tag/latest), which
-is rebuilt from `main` on every change, together with the PDF manual:
+#### From the release tarball
 
-[`install.packages`](https://rdrr.io/r/utils/install.packages.html)`(`` `` ``"https://github.com/sedzinfo/covid/releases/download/latest/covid_0.0.0.9000.tar.gz"``,`` `` repos ``=`` ``NULL``, type ``=`` ``"source"`` ``)`
+The [latest
+release](https://github.com/sedzinfo/covid/releases/tag/latest) has the
+source tarball and the PDF manual, rebuilt from `main` on every change:
+
+[`install.packages`](https://rdrr.io/r/utils/install.packages.html)`(``"pak"``)`` ``# once`` ``pak``::`[`pak`](https://pak.r-lib.org/reference/pak.html)`(``"url::https://github.com/sedzinfo/covid/releases/download/latest/covid_0.0.0.9000.tar.gz"``)`
+
+#### From a clone of the repository
+
+This repository keeps no files in [Git LFS](https://git-lfs.com), so a
+plain clone with [Git](https://git-scm.com/downloads) has everything:
+
+``` bash
+git clone https://github.com/sedzinfo/covid.git
+```
+
+[`install.packages`](https://rdrr.io/r/utils/install.packages.html)`(``"pak"``)`` ``# once`` ``pak``::`[`local_install`](https://pak.r-lib.org/reference/local_install.html)`(``"path/to/covid"``)`
 
 ## Usage
 
 [`library`](https://rdrr.io/r/base/library.html)`(`[`covid`](https://sedzinfo.github.io/covid/)`)`` `[`covid`](https://sedzinfo.github.io/covid/reference/covid.md)`(``)`
+
+## Screenshots
+
+![The cumulative confirmed infections and deaths of Greece, from January
+2020 to March 2023, with the numbers of 25 June 2022 shown on
+hover](reference/figures/covid1.png)
+
+The cumulative confirmed infections and deaths of Greece, from January
+2020 to March 2023, with the numbers of 25 June 2022 shown on hover
 
 ------------------------------------------------------------------------
 
