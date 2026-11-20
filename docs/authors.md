@@ -13,10 +13,6 @@ Source:
 Zacharatos D (2026). *covid: time series of covid-19 cases*. R package
 version 0.0.0.9000, <https://sedzinfo.github.io/covid/>.
 
-    @Manual{,
-      title = {covid: time series of covid-19 cases},
-      author = {Dimitrios Zacharatos},
-      year = {2026},
-      note = {R package version 0.0.0.9000},
-      url = {https://sedzinfo.github.io/covid/},
-    }
+@Manual{, title = {covid: time series of covid-19 cases}, author =
+{Dimitrios Zacharatos}, year = {2026}, note = {R package version
+0.0.0.9000}, url = {https://sedzinfo.github.io/covid/}, }

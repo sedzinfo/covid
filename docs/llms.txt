@@ -1,33 +1,44 @@
 # Time Series covid-19
 
+**[Open the live app](https://sedzinfo.shinyapps.io/covid_timeseries/)**
+· [Website](https://sedzinfo.github.io/covid/)
+
 plot covid-19 time series
 
-# Installation Instructions
+## Installation
 
-install.packages(“devtools”)
+### Prerequisites
 
-library(devtools)
+1.  **Install R**: <https://cran.r-project.org/>
+2.  **Install RStudio** (optional but recommended):
+    <https://posit.co/downloads/>
 
-install_github(“sedzinfo/covid”)
+### Package Installation
 
-Without devtools, install the source tarball of the [latest
+Open RStudio (or an R console) and run:
+
+[`install.packages`](https://rdrr.io/r/utils/install.packages.html)`(`` `` ``"covid"``,`` `` repos ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"https://sedzinfo.r-universe.dev"``, ``"https://cloud.r-project.org"``)`` ``)`
+
+[R-universe](https://sedzinfo.r-universe.dev/covid) builds covid from
+this repository, and CRAN provides the packages it needs.
+
+To install from GitHub instead:
+
+`# Install devtools if you haven't already`` `[`install.packages`](https://rdrr.io/r/utils/install.packages.html)`(``"devtools"``)`` ``# Install covid from GitHub`` ``devtools``::`[`install_github`](https://devtools.r-lib.org/reference/install-deprecated.html)`(``"sedzinfo/covid"``)`
+
+Or install the source tarball of the [latest
 release](https://github.com/sedzinfo/covid/releases/tag/latest), which
-is rebuilt from `master` on every change, together with the PDF manual:
+is rebuilt from `main` on every change, together with the PDF manual:
 
-``` r
+[`install.packages`](https://rdrr.io/r/utils/install.packages.html)`(`` `` ``"https://github.com/sedzinfo/covid/releases/download/latest/covid_0.0.0.9000.tar.gz"``,`` `` repos ``=`` ``NULL``, type ``=`` ``"source"`` ``)`
 
-install.packages(
-  "https://github.com/sedzinfo/covid/releases/download/latest/covid_0.0.0.9000.tar.gz",
-  repos = NULL, type = "source"
-)
-```
+## Usage
 
-# Usage
+[`library`](https://rdrr.io/r/base/library.html)`(`[`covid`](https://sedzinfo.github.io/covid/)`)`` `[`covid`](https://sedzinfo.github.io/covid/reference/covid.md)`(``)`
 
-library(covid)
+------------------------------------------------------------------------
 
-covid()
-
+[![R-universe](https://sedzinfo.r-universe.dev/covid/badges/version)](https://sedzinfo.r-universe.dev/covid)
 ![Stars](https://img.shields.io/github/stars/sedzinfo/covid)![Watchers](https://img.shields.io/github/watchers/sedzinfo/covid)![Repo
 Size](https://img.shields.io/github/repo-size/sedzinfo/covid)![Open
 Issues](https://img.shields.io/github/issues/sedzinfo/covid)![Forks](https://img.shields.io/github/forks/sedzinfo/covid)![Last
