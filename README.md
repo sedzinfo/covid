@@ -4,13 +4,13 @@ plot covid-19 time series
 
 # Installation Instructions
 
+```r
 install.packages("devtools")
-
 library(devtools)
-
 install_github("sedzinfo/covid")
+```
 
-Without devtools, install the source tarball of the [latest release](https://github.com/sedzinfo/covid/releases/tag/latest), which is rebuilt from `master` on every change, together with the PDF manual:
+Without devtools, install the source tarball of the [latest release](https://github.com/sedzinfo/covid/releases/tag/latest), which is rebuilt from `main` on every change, together with the PDF manual:
 
 ```r
 install.packages(
@@ -21,9 +21,10 @@ install.packages(
 
 # Usage
 
+```r
 library(covid)
-
 covid()
+```
 
 ![Stars](https://img.shields.io/github/stars/sedzinfo/covid)
 ![Watchers](https://img.shields.io/github/watchers/sedzinfo/covid)
